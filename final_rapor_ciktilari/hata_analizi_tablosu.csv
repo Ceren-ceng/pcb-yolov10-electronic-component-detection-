@@ -1,0 +1,6 @@
+﻿Sınıf,Sorun,Olası Neden,Çözüm Önerisi
+pads,Düşük mAP ve düşük F1,"Çok küçük alan, yoğun PCB arka planı, annotation hassasiyeti","Daha fazla pads örneği, crop tabanlı eğitim, daha yüksek çözünürlük"
+pins,Sık kaçırma ve background ile karışma,"İnce yapı, birbirine çok yakın pin dizilimleri","Yakın plan pin görüntüleri ekleme, etiket kalitesi kontrolü"
+inductor,Orta-düşük tespit başarımı,Farklı inductor tiplerinin görsel çeşitliliği,Daha dengeli ve çeşitli inductor verisi
+connector,Resistor/capacitor/arka plan ile karışma,Farklı connector formları ve yoğun PCB bölgeleri,"Connector alt tiplerini artırma, daha temiz etiketleme"
+capacitor / resistor / ic,Yoğun sahnelerde aşırı tespit ve label crowding,Bu sınıfların veri setinde baskın olması ve PCB üzerinde çok sık bulunması,"Dengeli veri seti, hard negative örnekler, yoğun bölge crop analizi"

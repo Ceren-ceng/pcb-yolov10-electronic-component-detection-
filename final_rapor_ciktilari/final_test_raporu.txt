@@ -1,0 +1,38 @@
+
+YOLOv10s PCB Bileşen Tespiti Final Test Özeti
+
+Model:
+YOLOv10s
+
+Veri seti:
+19 sınıflı temiz PCB bileşen veri seti
+
+Test görüntüsü sayısı:
+122
+
+Test nesne sayısı:
+3933
+
+Genel Precision (Kesinlik):
+0.729
+
+Genel Recall (Yakalama Oranı):
+0.667
+
+Genel F1 Skoru:
+0.697
+
+Genel mAP50:
+0.687
+
+Genel mAP50-95:
+0.439
+
+Yaklaşık Tespit Doğruluğu:
+0.534
+
+Yorum:
+Model, PCB üzerindeki elektronik bileşenleri genel olarak başarılı şekilde tespit etmektedir.
+Özellikle capacitor, resistor, ic, switch, display, buzzer ve relay sınıflarında güçlü sonuçlar alınmıştır.
+Pads ve pins gibi küçük ve ince yapılı sınıflarda performans düşmektedir.
+Bu durum, PCB görüntülerinde küçük nesne tespitinin zor olmasından kaynaklanmaktadır.

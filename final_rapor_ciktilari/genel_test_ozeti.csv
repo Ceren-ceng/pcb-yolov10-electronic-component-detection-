@@ -1,0 +1,2 @@
+﻿class_name,images,instances,precision_kesinlik,recall_yakalama_orani,map50,map50_95,f1_skoru,yaklasik_TP_dogru_pozitif,yaklasik_FN_yanlis_negatif,yaklasik_FP_yanlis_pozitif,tespit_dogrulugu_accuracy
+all,122,3933,0.729,0.667,0.687,0.439,0.6966232091690545,2623.311,1309.6889999999999,975.1951728395063,0.5344756896621845
