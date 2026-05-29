@@ -40,23 +40,67 @@ Toplam: **19 sınıf**
 
 ## Veri Seti
 
-Bu çalışmada kullanılan veri seti Kaggle platformundan elde edilmiştir.
+Bu çalışmada kullanılan veri seti, Kaggle platformunda yayınlanan **PCB Component Detection Consolidated Dataset** veri setinden elde edilmiştir.
 
-Veri Seti:
+Veri seti bağlantısı:
 
-https://www.kaggle.com/datasets/akhatova/pcb-electronic-components-detection-dataset
+https://www.kaggle.com/datasets/aryanstein/pcb-component-detection-consolidated-dataset
 
-Orijinal veri seti içerisinde bulunan bazı sınıflar veri dengesizliği ve proje kapsamı nedeniyle çıkarılmıştır.
+Bu veri seti farklı PCB (Printed Circuit Board) görüntülerinden oluşmakta ve çok sayıda elektronik bileşen sınıfını içermektedir. Veri seti içerisinde dirençler, kapasitörler, entegre devreler, diyotlar, LED'ler, röleler, konnektörler ve benzeri birçok elektronik bileşen için etiketlenmiş örnekler bulunmaktadır.
 
-Çıkarılan sınıflar:
+Ancak veri seti doğrudan eğitim için kullanılmamıştır. İlk aşamada veri seti detaylı olarak incelenmiş ve bazı sınıfların veri miktarının yetersiz olduğu, bazı sınıfların ise proje hedefleri açısından gereksiz olduğu görülmüştür.
+
+Orijinal veri setinde bulunan aşağıdaki sınıflar çalışma kapsamından çıkarılmıştır:
 
 * Heatsink
 * Transducer
 * Transformer
 
-Böylece çalışma 19 sınıf üzerinden devam ettirilmiştir.
+Bu sınıfların çıkarılmasının temel nedenleri:
 
----
+* Veri miktarlarının diğer sınıflara göre düşük olması,
+* PCB üzerindeki temel elektronik bileşenlere odaklanılması,
+* Sınıf dengesizliğinin azaltılmak istenmesi,
+* Model performansının daha kararlı hale getirilmesi.
+
+Bu düzenleme sonrasında veri seti yeniden yapılandırılmış, sınıf ID'leri güncellenmiş ve son haliyle toplam **19 sınıftan oluşan temiz bir veri seti** elde edilmiştir.
+
+Son çalışmada kullanılan sınıflar şunlardır:
+
+* Battery
+* Button
+* Buzzer
+* Capacitor
+* Clock
+* Connector
+* Diode
+* Display
+* Fuse
+* IC
+* Inductor
+* LED
+* Pads
+* Pins
+* Potentiometer
+* Relay
+* Resistor
+* Switch
+* Transistor
+
+Veri seti üzerinde ayrıca;
+
+* Etiket doğrulama,
+* Sınıf temizleme,
+* Veri dağılımı analizi,
+* Eğitim / doğrulama / test ayrımı kontrolü,
+* Sınıf istatistiklerinin çıkarılması
+
+işlemleri gerçekleştirilmiştir.
+
+Bu işlemler sonucunda oluşturulan temiz veri seti, YOLOv10n ve YOLOv10s modellerinin eğitiminde kullanılmıştır.
+
+
+
 
 ## Veri Seti Temizleme Süreci
 
